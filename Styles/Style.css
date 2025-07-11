@@ -10,17 +10,17 @@ body {
     color: #252432;
 }
 
-/* Container for overall width control, set for desktop view */
+
 .container {
-    max-width: 1440px; /* Adjust this value if your desktop view needs a different max-width */
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 56px; /* Optimized for desktop based on your largest media query padding */
+    padding: 0 56px; 
 }
 
-/* Hero Section */
+
 .hero-section {
     background-color: #f5f8ff;
-    background-image: url('../Assets/banner.png'); /* Updated path based on your uploaded files */
+    background-image: url;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -28,9 +28,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 16px; /* Keeping some padding for smaller desktop screens if max-width is adjusted */
-}
+    padding: 50px 16px;
 
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -69,13 +69,13 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 36px;
-    width: 62%; /* Optimized for larger screens based on your media query */
+    width: 62%;
     max-width: 800px;
     text-align: center;
 }
 
 .hero-title {
-    font-size: 65px; /* Set to a desktop-friendly size */
+    font-size: 65px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -100,25 +100,25 @@ body {
     transform: translateY(-2px);
 }
 
-/* See It in Action Section */
+
 .action-section {
     display: flex;
-    flex-direction: row; /* Changed to row for desktop layout */
+    flex-direction: row;
     align-items: center;
-    gap: 60px; /* Desktop gap */
+    gap: 60px; 
     margin: 116px 0;
-    padding: 0 16px; /* Keeping some padding for safety */
+    padding: 0 16px; 
 }
 
 .action-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 1; /* Allows content to take available space */
+    flex: 1;
 }
 
 .action-title {
-    font-size: 42px; /* Set to desktop-friendly size */
+    font-size: 42px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -126,7 +126,7 @@ body {
 }
 
 .action-description {
-    font-size: 24px; /* Set to desktop-friendly size */
+    font-size: 24px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 1.25;
@@ -136,14 +136,13 @@ body {
 
 .preview-image {
     flex-shrink: 0;
-    width: 34%; /* Desktop width */
+    width: 34%;
     max-width: 402px;
     height: auto;
     border-radius: 48px;
-    /* margin: 0 auto; Removed margin auto as it's now part of a flex row */
+    
 }
 
-/* Statistics Section */
 .stats-section {
     background-color: #4d47ff19;
     border-radius: 24px;
@@ -156,7 +155,7 @@ body {
 }
 
 .stats-title {
-    font-size: 32px; /* Set to desktop-friendly size */
+    font-size: 32px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -166,8 +165,8 @@ body {
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns for desktop */
-    gap: 80px; /* Desktop gap */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px; 
     width: 100%;
 }
 
@@ -179,7 +178,7 @@ body {
 }
 
 .stat-number {
-    font-size: 80px; /* Set to desktop-friendly size */
+    font-size: 80px; 
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: #4d47ff;
@@ -187,14 +186,14 @@ body {
 }
 
 .stat-label {
-    font-size: 20px; /* Set to desktop-friendly size */
+    font-size: 20px; 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: #0000007f;
     margin-top: 8px;
 }
 
-/* Testimonials Section */
+
 .testimonials-section {
     margin: 136px 0;
     display: flex;
@@ -204,7 +203,7 @@ body {
 }
 
 .testimonials-title {
-    font-size: 36px; /* Set to desktop-friendly size */
+    font-size: 36px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -214,8 +213,8 @@ body {
 
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns for desktop */
-    gap: 30px; /* Desktop gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
     width: 100%;
 }
 
@@ -246,7 +245,7 @@ body {
 }
 
 .testimonial-title {
-    font-size: 24px; /* Set to desktop-friendly size */
+    font-size: 24px; 
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: #1e1e1e;
@@ -254,7 +253,7 @@ body {
 }
 
 .testimonial-text {
-    font-size: 16px; /* Set to desktop-friendly size */
+    font-size: 16px; 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 1.4;
@@ -280,20 +279,20 @@ body {
 }
 
 .reviewer-name {
-    font-size: 16px; /* Set to desktop-friendly size */
+    font-size: 16px; 
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: #757575;
 }
 
 .reviewer-date {
-    font-size: 16px; /* Set to desktop-friendly size */
+    font-size: 16px; 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: #b3b3b3;
 }
 
-/* Focus Better Section */
+
 .focus-section {
     background-color: #ffffff;
     border-radius: 14px;
@@ -307,7 +306,7 @@ body {
 }
 
 .focus-title {
-    font-size: 50px; /* Set to desktop-friendly size */
+    font-size: 50px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -349,29 +348,29 @@ body {
     margin-top: 20px;
 }
 
-/* Contact Section */
+
 .contact-section {
     margin: 162px 0;
     display: flex;
-    flex-direction: row; /* Changed to row for desktop layout */
-    align-items: flex-start; /* Align items to the start of the cross-axis */
-    gap: 80px; /* Desktop gap */
+    flex-direction: row;
+    align-items: flex-start; 
+    gap: 80px; 
 }
 
 .contact-title {
-    font-size: 97px; /* Set to desktop-friendly size */
+    font-size: 97px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
     color: #000000;
-    width: 46%; /* Desktop width */
+    width: 46%;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    width: 44%; /* Desktop width */
+    width: 44%;
 }
 
 .form-group {
@@ -381,7 +380,7 @@ body {
 }
 
 .form-label {
-    font-size: 18px; /* Set to desktop-friendly size */
+    font-size: 18px; 
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     color: #000000;
@@ -391,7 +390,7 @@ body {
     border: 1px solid #d6ddec;
     border-radius: 10px;
     padding: 20px 32px;
-    font-size: 20px; /* Set to desktop-friendly size */
+    font-size: 20px; 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: #0000007f;
@@ -448,14 +447,14 @@ body {
 }
 
 .footer-logo {
-    font-size: 100px; /* Set to desktop-friendly size */
+    font-size: 100px; 
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     color: #4d47ff;
 }
 
 .footer-description {
-    font-size: 16px; /* Set to desktop-friendly size */
+    font-size: 16px; 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -471,7 +470,7 @@ body {
 }
 
 .footer-link {
-    font-size: 16px; /* Set to desktop-friendly size */
+    font-size: 16px; 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: #8987a1;
