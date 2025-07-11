@@ -11,16 +11,17 @@
             color: #252432;
         }
 
+        /* Container for overall width control, set for desktop view */
         .container {
-            max-width: 1440px;
+            max-width: 1440px; /* Adjust this value if your desktop view needs a different max-width */
             margin: 0 auto;
-            padding: 0 16px;
+            padding: 0 56px; /* Optimized for desktop based on your largest media query padding */
         }
 
         /* Hero Section */
         .hero-section {
             background-color: #f5f8ff;
-            background-image: url('../assets/images/img_.png');
+            background-image: url('../assets/images/img_.png'); /* Check if this path is correct */
             background-size: cover;
             background-position: center;
             min-height: 100vh;
@@ -28,7 +29,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 50px 16px;
+            padding: 50px 16px; /* Keeping some padding for smaller desktop screens if max-width is adjusted */
         }
 
         .header {
@@ -40,7 +41,7 @@
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 34px; /* Set to a desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 900;
             color: #4d47ff;
@@ -69,13 +70,13 @@
             flex-direction: column;
             align-items: center;
             gap: 36px;
-            width: 100%;
+            width: 62%; /* Optimized for larger screens based on your media query */
             max-width: 800px;
             text-align: center;
         }
 
         .hero-title {
-            font-size: 32px;
+            font-size: 65px; /* Set to a desktop-friendly size */
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
             line-height: 1.2;
@@ -103,22 +104,22 @@
         /* See It in Action Section */
         .action-section {
             display: flex;
-            flex-direction: column;
+            flex-direction: row; /* Changed to row for desktop layout */
             align-items: center;
-            gap: 40px;
+            gap: 60px; /* Desktop gap */
             margin: 116px 0;
-            padding: 0 16px;
+            padding: 0 16px; /* Keeping some padding for safety */
         }
 
         .action-content {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            width: 100%;
+            flex: 1; /* Allows content to take available space */
         }
 
         .action-title {
-            font-size: 28px;
+            font-size: 42px; /* Set to desktop-friendly size */
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
             line-height: 1.2;
@@ -126,7 +127,7 @@
         }
 
         .action-description {
-            font-size: 18px;
+            font-size: 24px; /* Set to desktop-friendly size */
             font-family: 'Raleway', sans-serif;
             font-weight: 400;
             line-height: 1.25;
@@ -135,11 +136,12 @@
         }
 
         .preview-image {
-            width: 100%;
+            flex-shrink: 0;
+            width: 34%; /* Desktop width */
             max-width: 402px;
             height: auto;
             border-radius: 48px;
-            margin: 0 auto;
+            /* margin: 0 auto; Removed margin auto as it's now part of a flex row */
         }
 
         /* Statistics Section */
@@ -155,7 +157,7 @@
         }
 
         .stats-title {
-            font-size: 28px;
+            font-size: 32px; /* Set to desktop-friendly size */
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
             line-height: 1.2;
@@ -165,8 +167,8 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
+            grid-template-columns: repeat(3, 1fr); /* Set to 3 columns for desktop */
+            gap: 80px; /* Desktop gap */
             width: 100%;
         }
 
@@ -178,7 +180,7 @@
         }
 
         .stat-number {
-            font-size: 48px;
+            font-size: 80px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 700;
             color: #4d47ff;
@@ -186,7 +188,7 @@
         }
 
         .stat-label {
-            font-size: 16px;
+            font-size: 20px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             color: #0000007f;
@@ -203,7 +205,7 @@
         }
 
         .testimonials-title {
-            font-size: 28px;
+            font-size: 36px; /* Set to desktop-friendly size */
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
             line-height: 1.2;
@@ -213,8 +215,8 @@
 
         .testimonials-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr); /* Set to 3 columns for desktop */
+            gap: 30px; /* Desktop gap */
             width: 100%;
         }
 
@@ -245,7 +247,7 @@
         }
 
         .testimonial-title {
-            font-size: 20px;
+            font-size: 24px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 600;
             color: #1e1e1e;
@@ -253,7 +255,7 @@
         }
 
         .testimonial-text {
-            font-size: 14px;
+            font-size: 16px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             line-height: 1.4;
@@ -279,14 +281,14 @@
         }
 
         .reviewer-name {
-            font-size: 14px;
+            font-size: 16px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 600;
             color: #757575;
         }
 
         .reviewer-date {
-            font-size: 14px;
+            font-size: 16px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             color: #b3b3b3;
@@ -306,7 +308,7 @@
         }
 
         .focus-title {
-            font-size: 32px;
+            font-size: 50px; /* Set to desktop-friendly size */
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
             line-height: 1.2;
@@ -352,23 +354,25 @@
         .contact-section {
             margin: 162px 0;
             display: flex;
-            flex-direction: column;
-            gap: 40px;
+            flex-direction: row; /* Changed to row for desktop layout */
+            align-items: flex-start; /* Align items to the start of the cross-axis */
+            gap: 80px; /* Desktop gap */
         }
 
         .contact-title {
-            font-size: 48px;
+            font-size: 97px; /* Set to desktop-friendly size */
             font-family: 'Raleway', sans-serif;
             font-weight: 700;
             line-height: 1.2;
             color: #000000;
+            width: 46%; /* Desktop width */
         }
 
         .contact-form {
             display: flex;
             flex-direction: column;
             gap: 18px;
-            width: 100%;
+            width: 44%; /* Desktop width */
         }
 
         .form-group {
@@ -378,7 +382,7 @@
         }
 
         .form-label {
-            font-size: 16px;
+            font-size: 18px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 500;
             color: #000000;
@@ -388,7 +392,7 @@
             border: 1px solid #d6ddec;
             border-radius: 10px;
             padding: 20px 32px;
-            font-size: 18px;
+            font-size: 20px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             color: #0000007f;
@@ -445,14 +449,14 @@
         }
 
         .footer-logo {
-            font-size: 60px;
+            font-size: 100px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 900;
             color: #4d47ff;
         }
 
         .footer-description {
-            font-size: 14px;
+            font-size: 16px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             line-height: 1.5;
@@ -463,12 +467,12 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 40px; /* Desktop gap */
             margin-top: 20px;
         }
 
         .footer-link {
-            font-size: 14px;
+            font-size: 16px; /* Set to desktop-friendly size */
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             color: #8987a1;
@@ -478,183 +482,4 @@
 
         .footer-link:hover {
             color: #4d47ff;
-        }
-
-        /* Responsive Design */
-        @media (min-width: 640px) {
-            .container {
-                padding: 0 24px;
-            }
-
-            .hero-title {
-                font-size: 48px;
-            }
-
-            .action-title {
-                font-size: 36px;
-            }
-
-            .stats-title {
-                font-size: 32px;
-            }
-
-            .testimonials-title {
-                font-size: 36px;
-            }
-
-            .focus-title {
-                font-size: 42px;
-            }
-
-            .contact-title {
-                font-size: 64px;
-            }
-
-            .footer-logo {
-                font-size: 80px;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 60px;
-            }
-
-            .stat-number {
-                font-size: 64px;
-            }
-
-            .stat-label {
-                font-size: 18px;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                padding: 0 32px;
-            }
-
-            .logo {
-                font-size: 34px;
-            }
-
-            .hero-title {
-                font-size: 65px;
-            }
-
-            .action-section {
-                flex-direction: row;
-                align-items: center;
-                gap: 60px;
-            }
-
-            .action-content {
-                flex: 1;
-            }
-
-            .action-title {
-                font-size: 42px;
-            }
-
-            .action-description {
-                font-size: 24px;
-            }
-
-            .preview-image {
-                flex-shrink: 0;
-                width: 34%;
-                max-width: 402px;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 80px;
-            }
-
-            .stat-number {
-                font-size: 80px;
-            }
-
-            .stat-label {
-                font-size: 20px;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-            }
-
-            .testimonial-title {
-                font-size: 24px;
-            }
-
-            .testimonial-text {
-                font-size: 16px;
-            }
-
-            .reviewer-name, .reviewer-date {
-                font-size: 16px;
-            }
-
-            .focus-title {
-                font-size: 50px;
-            }
-
-            .contact-section {
-                flex-direction: row;
-                align-items: flex-start;
-                gap: 80px;
-            }
-
-            .contact-title {
-                font-size: 80px;
-                width: 46%;
-            }
-
-            .contact-form {
-                width: 44%;
-            }
-
-            .form-label {
-                font-size: 18px;
-            }
-
-            .form-input, .form-textarea {
-                font-size: 20px;
-            }
-
-            .footer-description {
-                font-size: 16px;
-            }
-
-            .footer-nav {
-                gap: 40px;
-            }
-
-            .footer-link {
-                font-size: 16px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .hero-content {
-                width: 62%;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .contact-title {
-                font-size: 97px;
-            }
-
-            .footer-logo {
-                font-size: 100px;
-            }
-        }
-
-        @media (min-width: 1280px) {
-            .container {
-                padding: 0 56px;
-            }
         }
